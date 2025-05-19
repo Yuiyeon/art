@@ -1,0 +1,755 @@
+@import url("./reset.css");
+
+#wrap {
+  width: 100%;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+/* 헤더  */
+#wrap #header {
+  width: 100%;
+  height: 100px;
+  background: var(--main-color);
+  position: relative;
+  z-index: 3;
+}
+#wrap #header .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+}
+
+#wrap #header .container .left {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 로고 */
+
+#wrap #header .container .left h1 {
+  width: 100%;
+  height: 40px;
+}
+#wrap #header .container .left h1 a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+#wrap #header .container .left h1 a img {
+  width: 80%;
+}
+#wrap #header .container .left h1 a:hover img {
+  opacity: 0.7;
+}
+
+/* 네비게이션 */
+#wrap #header .container .right {
+  width: calc(100% - 200px);
+  height: 100%;
+}
+
+#wrap #header .container .right #gnb {
+  width: 700px;
+  height: 50px;
+  margin: 50px 20px 0 auto;
+  background: var(--main-color);
+}
+#wrap #header .container .right #gnb > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#wrap #header .container .right #gnb > ul > li {
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+/* 메인버튼 */
+#wrap #header .container .right #gnb > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+#wrap #header .container .right #gnb > ul > li > a:hover {
+  background: var(--sub-color);
+  font-weight: 600;
+}
+#wrap #header .container .right #gnb > ul > li > a.on {
+  background: var(--sub-color);
+  font-weight: 600;
+}
+/* 서브메뉴 */
+#wrap #header .container .right #gnb > ul > li .sub {
+  width: 100%;
+  background-color: var(--sub-color);
+
+  position: absolute;
+  top: 50px; /* gnb기준 50 아래임 */
+  left: 0;
+
+  border-top: 1px solid #ccc;
+  display: none;
+}
+#wrap #header .container .right #gnb > ul > li .sub.on {
+  display: block;
+}
+
+#wrap #header .container .right #gnb > ul > li .sub .sub-container {
+  width: 100%;
+}
+#wrap #header .container .right #gnb > ul > li .sub .sub-container > ul {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+}
+/* 4칸 나누기 */
+#wrap #header .container .right #gnb > ul > li .sub .sub-container > ul > li {
+  width: 100%;
+}
+#wrap
+  #header
+  .container
+  .right
+  #gnb
+  > ul
+  > li
+  .sub
+  .sub-container
+  > ul
+  > li
+  > ul {
+  width: 100%;
+}
+#wrap
+  #header
+  .container
+  .right
+  #gnb
+  > ul
+  > li
+  .sub
+  .sub-container
+  > ul
+  > li
+  > ul
+  > li {
+  width: 100%;
+}
+#wrap
+  #header
+  .container
+  .right
+  #gnb
+  > ul
+  > li
+  .sub
+  .sub-container
+  > ul
+  > li
+  > ul
+  > li
+  > a {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+#wrap
+  #header
+  .container
+  .right
+  #gnb
+  > ul
+  > li
+  .sub
+  .sub-container
+  > ul
+  > li
+  > ul
+  > li
+  > a:hover {
+  background: var(--main-color);
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+/* 메인 */
+#wrap #main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* 섹션1 */
+#wrap #main #section1 {
+  width: 100%;
+  height: 300px;
+  /* background-color: yellow; */
+}
+#wrap #main #section1 .container {
+  width: 100%;
+  height: 100%;
+}
+/* 메인슬라이드 */
+#wrap #main #section1 .container .slide-container {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap {
+  width: 100%;
+  height: auto;
+  margin-top: -300px;
+  position: relative;
+  top: calc(-100% * 0);
+}
+#wrap
+  #main
+  #section1
+  .container
+  .slide-container
+  .slide-view
+  .slide-wrap
+  .slide {
+  width: 100%;
+  height: 300px; /* 반드시 픽셀로 써줘야함 */
+}
+#wrap
+  #main
+  #section1
+  .container
+  .slide-container
+  .slide-view
+  .slide-wrap
+  .slide
+  a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+#wrap
+  #main
+  #section1
+  .container
+  .slide-container
+  .slide-view
+  .slide-wrap
+  .slide
+  a
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+
+/* 슬라이드 캡션 */
+#wrap
+  #main
+  #section1
+  .container
+  .slide-container
+  .slide-view
+  .slide-wrap
+  .slide
+  a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -35px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: rgba(202, 172, 125, 0.473);
+  font-size: 30px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+#wrap
+  #main
+  #section1
+  .container
+  .slide-container
+  .slide-view
+  .slide-wrap
+  .slide1
+  a::after {
+  content: "세계의 미술관1";
+}
+
+#wrap
+  #main
+  #section1
+  .container
+  .slide-container
+  .slide-view
+  .slide-wrap
+  .slide2
+  a::after {
+  content: "세계의 미술관2";
+}
+#wrap
+  #main
+  #section1
+  .container
+  .slide-container
+  .slide-view
+  .slide-wrap
+  .slide3
+  a::after {
+  content: "세계의 미술관3";
+}
+
+/* 섹션2 */
+#wrap #main #section2 {
+  width: 100%;
+  height: 200px;
+  padding: 10px 0;
+}
+#wrap #main #section2 .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+/* 3개 공통사항 */
+#wrap #main #section2 .container .col {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+/* 3개박스의 공통 스타일 스타일 */
+#wrap #main #section2 .container .col .content {
+  /* width: auto;  마진을 쓰면 너비를 auto로 해야 밖으로 안벗어남 */
+  width: calc(100% - 10px); /* 또는 100%에서 마진값 빼주기 */
+  height: 100%;
+  margin-left: 10px;
+}
+
+/* 공지스타일 */
+#wrap #main #section2 .container .col.left .content {
+  width: auto;
+  margin-left: 0; /* 왼쪽은 마진을 없앰 */
+  position: relative;
+  padding-top: 34px;
+}
+
+/* 갤러리 스타일 */
+#wrap #main #section2 .container .col.center .content {
+  width: auto;
+  margin-left: 10px;
+  position: relative;
+  padding-top: 34px;
+}
+
+/* 내용 부분  */
+/* 공지사항 갤러리 공통 */
+#wrap #main #section2 .container .col .content .contents {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center; /* 내부 내용(ul) 공통으로 수직 정렬  */
+}
+/* /////////////////////////////////////////////////////// */
+/* 공지사항 갤러리 공통 버튼 */
+#wrap #main #section2 .container .col .content .tab-btn {
+  cursor: default;
+  z-index: 3;
+  background: #fff;
+  color: #333;
+  width: 100px;
+  height: 35px;
+  border: #ccc 1px solid;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+/* 본문 내용 */
+/* 공지사항 */
+#wrap
+  #main
+  #section2
+  .container
+  .col.left
+  .content
+  .contents.notice-contents
+  ul {
+  width: 100%;
+  padding: 0 20px;
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.left
+  .content
+  .contents.notice-contents
+  ul
+  li {
+  width: 100%;
+  padding: 6px 0 6px 10px; /*왼쪽에 글머리 장식 넣으려고 */
+  display: flex;
+  justify-content: space-between; /* a링크(제목)와 span태그(날짜) 좌우 끝에 붙임 */
+  position: relative;
+}
+/* 글머리 장식 (3px 사각형) */
+#wrap
+  #main
+  #section2
+  .container
+  .col.left
+  .content
+  .contents.notice-contents
+  ul
+  li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1.5px;
+  width: 3px;
+  height: 3px;
+  background: #000;
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.left
+  .content
+  .contents.notice-contents
+  ul
+  li
+  a {
+  width: calc(100% - 100px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.left
+  .content
+  .contents.notice-contents
+  ul
+  li
+  a:hover {
+  color: var(--main-color);
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.left
+  .content
+  .contents.notice-contents
+  ul
+  li
+  span {
+  width: 100px;
+  font-size: 13px;
+  color: #999;
+  text-align: right;
+}
+
+/* 갤러리 리스트 */
+#wrap
+  #main
+  #section2
+  .container
+  .col.center
+  .content
+  .contents.gallery-contents
+  ul {
+  width: 100%;
+  display: flex;
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.center
+  .content
+  .contents.gallery-contents
+  ul
+  li {
+  width: calc(100% / 3);
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.center
+  .content
+  .contents.gallery-contents
+  ul
+  li
+  a {
+  display: block;
+  width: calc(100% - 20px);
+  width: auto;
+  margin: 0 10px;
+  overflow: hidden;
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.center
+  .content
+  .contents.gallery-contents
+  ul
+  li
+  a
+  img {
+  width: 100%;
+  transition: all 0.3s;
+}
+#wrap
+  #main
+  #section2
+  .container
+  .col.center
+  .content
+  .contents.gallery-contents
+  ul
+  li
+  a
+  img:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+/* 바로가기 영역 */
+
+#wrap #main #section2 .container .col.right .content a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#wrap #main #section2 .container .col.right .content a::after {
+  content: "미술관 행사 바로가기";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-top: -30px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrap #main #section2 .container .col.right .content a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+#wrap #main #section2 .container .col.right .content a:hover img {
+  opacity: 0.7;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+/* 푸터 */
+#wrap #footer {
+  width: 100%;
+  height: 100px;
+  background: #f0f0f0;
+  position: relative;
+  z-index: 2;
+}
+#wrap #footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+}
+
+/* 푸터 로고 */
+#wrap #footer .container .left {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #footer .container .left h1 {
+  width: 100%;
+  height: 40px;
+}
+#wrap #footer .container .left h1 a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  background: #ccc;
+}
+#wrap #footer .container .left h1 a img {
+  width: 80%;
+  opacity: 0.7;
+}
+#wrap #footer .container .left h1 a:hover img {
+  opacity: 0.7;
+}
+
+/* 카피라이트 */
+#wrap #footer .container .center {
+  width: calc(100% - 400px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap #footer .container .center h1 p {
+  font-size: 13px;
+  padding-left: 40px;
+  color: #999;
+}
+
+/*  sns */
+#wrap #footer .container .right {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#wrap #footer .container .right a {
+  margin-left: 20px;
+}
+
+#wrap #footer .container .right a img {
+  width: 30px;
+  transition: all 0.3s;
+}
+#wrap #footer .container .right a img:hover {
+  opacity: 0.7;
+}
+/* ////////////////////////////////////////////// */
+/* 모달창 */
+#wrap .modal {
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#wrap .modal.on {
+  display: block;
+}
+#wrap .modal .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#wrap .modal .container .content {
+  width: 700px;
+  height: auto;
+  background: #fff;
+  margin: auto;
+  position: relative;
+  padding-bottom: 80px;
+
+  border-radius: 5px;
+}
+
+#wrap .modal .container .content button.close-btn {
+  width: 100px;
+  height: 40px;
+  background: var(--sub-color);
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+#wrap .modal .container .content button.close-btn:hover {
+  opacity: 0.8;
+}
+
+/* 내용  */
+#wrap .modal .container .content ul {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+}
+#wrap .modal .container .content ul li {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#wrap .modal .container .content ul li:first-child {
+  border-top: 2px solid var(--sub-color);
+}
+
+/* 제목 */
+#wrap .modal .container .content ul li .title {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  padding-left: 20px;
+}
+#wrap .modal .container .content ul li .title h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+/* 본문 */
+#wrap .modal .container .content ul li .contents {
+  padding: 12px 20px;
+}
+#wrap .modal .container .content ul li .contents p {
+  padding: 8px 0;
+  line-height: 160%;
+}
