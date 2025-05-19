@@ -74,14 +74,16 @@ $(() => {
       // [3] 공지사항 갤러리 탭버튼
       //공지사항 클릭할 떄
       $(".notice-btn").on({
-        click() {
+        click(e) {
+           e.preventDefault();
           $(".tab-btn,.contents").removeClass("on"); //버튼 2개, 박스 2개 총 4개 다 변함
         },
       });
 
       // 갤러리 버튼 클릭할 때
       $(".gallery-btn").on({
-        click() {
+        click(e) {
+           e.preventDefault();
           $(".tab-btn,.contents").addClass("on"); //버튼 2개, 박스 2개 총 4개 다 변함
         },
       });
@@ -89,7 +91,8 @@ $(() => {
       // [4] 모달 버튼
       // 공지사항 첫글 클릭해서 열기
       $(".modal-open").on({
-        click() {
+        click(e) {
+           e.preventDefault();
           $(".modal").addClass("on");
         },
       });
@@ -98,7 +101,8 @@ $(() => {
     modal() {
       // 모달창 닫기 버튼 클릭
       $(".close-btn").on({
-        click() {
+        click(e) {
+          e.preventDefault();
           $(".modal").removeClass("on");
         },
       });
